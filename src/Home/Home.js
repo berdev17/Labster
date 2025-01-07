@@ -16,93 +16,93 @@ const Home = () => {
         <form className='form1-content'>
           
           <div className="date-form">
-            <label for="medical-date">Select you date(date and time):</label>
-
             <DateSelect/>
-            {/* <input type="datetime-local" id="medical-date" name="birthdaytime"/> */}
           </div>
-
-          <label className='bold-label'>Nombre</label>
+         
           <form className='name-form'>
-          
-            <div className='name-inputs'>
-              <input className='form-inputs' id='name-input'/>
-              <label className='form-labels' for='name-input'>Nombre</label>
+            <div className='input-group'>
+              <label className='title-form bold-label' for='name-input'>Name</label>
+              <input className='form-inputs' id='name-input' />
+              <label className='form-labels' for='name-input'>First name</label>
             </div>
 
-            <div className='lastname-inputs'>
-              <input className='form-inputs' id='lastname-input'/>
-              <label className='form-labels' for='lastname-input'>Apellido</label>
+            <div className='input-group'>
+              <label className='title-form bold-label' for='lastname-input'>Last Name</label>
+              <input className='form-inputs' id='lastname-input' />
+              <label className='form-labels' for='lastname-input'>Last name</label>
+            </div>
+
+            <div className='input-group'>
+              <label className='title-form bold-label' for='gender-input'>Gender</label>
+              <select className='form-inputs select-input' id='gender-input'>
+                <option value=""></option>
+                <option value="0">Male</option>
+                <option value="1">Female</option>
+                <option value="2">N/A</option>
+              </select>
+            </div>
+
+            <div className='input-group'>
+              <label className='title-form bold-label' for='phone-input'>Phone</label>
+              <input className='form-inputs' id='phone-input' />
+              <label className='form-labels' for='phone-input'>Insert your phone number</label>
+            </div>
+
+            <div className='input-group'>
+              <label className='title-form bold-label' for='birthdaytime'>Birthday</label>
+              <input className='form-inputs' type='date' id='birthdaytime' name='birthdaytime' />
             </div>
           </form>
 
-          <div className='data-form'>
-            <label className='title-form bold-label'>Gender</label>
-            <div className='input-group'>
-               
-                {/* <input className='form-inputs' id='gender-input'/> */}
-                <select className='form-inputs' id='gender-input'>
-                  <option value=""></option>
-                  <option value="0">Male</option>
-                  <option value="1">Female</option>
-                  <option value="2">N/a</option>
-                </select>
-                {/* <label className='form-labels' for='name-input'>Nombre</label> */}
-              </div>
-              
-              <label className='title-form bold-label'>Phone</label>
+          </form>
+
+          <label className='address-label bold-label'>Address</label>
+        <form className='address-form'>
+            
+            <input className='form-inputs'></input>
+            <label className='form-labels'>Address 1</label>
+
+            <input className='form-inputs' ></input>
+            <label className='form-labels'>Address 2</label>
+            
+            <div className='name-form'>
               <div className='input-group'>
-                
-                <input className='form-inputs' id='phone-input'/>
-                <label className='form-labels' for='phone-input'>Insert your phone number</label>
+                <input className='form-inputs'></input>
+                <label className='form-labels'>City</label>
               </div>
+
+              <div className='input-group'>
+                <input className='form-inputs'></input>
+                <label className='form-labels'>State</label>
+              </div>
+
             </div>
-          <div>
-            {/* Aqui va otro jodio Datepicker, depue se pone tambien */}
+
+            <input className='form-inputs'></input>
+            <label className='form-labels'>Postal code</label>
+        </form>
+
+        <label className='email-label bold-label'>Email</label>
+
+        <form className='email-form'>
+          <div className='form-group'>
+            <input className='form-inputs'/>
+            <label className='form-labels'>example@email.com</label>
           </div>
         </form>
 
-        <form>
-          {/* <Form.Group>
-            <Form.Label>Direccion</Form.Label>
-            <Form.Control type='text'></Form.Control>
-          </Form.Group>
-
-          <Form.Group>
-            <Form.Label>Direccion 2</Form.Label>
-            <Form.Control type='text'></Form.Control>
-          </Form.Group>
-
+        <div className='visted-form'>
+          <label className='vistited-label bold-label'>Have you ever visited us?</label>
           <div>
-          <Form.Group>
-            <Form.Label>Ciudad</Form.Label>
-            <Form.Control type='text'></Form.Control>
-          </Form.Group>
-
-          <Form.Group>
-            <Form.Label>Estado / Provincia</Form.Label>
-            <Form.Control type='text'></Form.Control>
-          </Form.Group>
+            <input className='check-input' id='yes' type='Radio' name='visted'/>
+            <label className='yes-no-label' for='yes'>Yes</label>
           </div>
 
-          <Form.Group>
-            <Form.Label>Direccion</Form.Label>
-            <Form.Control type='text'></Form.Control>
-          </Form.Group> */}
-        </form>
+          <div>
+            <input className='check-input' id='no' type='Radio' name='visted'/>
+            <label className='yes-no-label' for='no'>No</label>
+          </div>
 
-        <form>
-          {/* <Form.Group>
-            <Form.Label>Email</Form.Label>
-            <Form.Control controlId="exampleForm.ControlInput1"></Form.Control>
-          </Form.Group> */}
-        </form>
-
-        <div>
-          {/* <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
-            <Form.Label>Coments</Form.Label>
-            <Form.Control as="textarea" rows={3} />
-          </Form.Group> */}
         </div>
 
         {/* <Button variant="outline-success">Submit</Button> */}

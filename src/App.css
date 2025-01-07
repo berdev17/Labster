@@ -1,12 +1,13 @@
 .main-content{
-  /* border: 3px solid black; */
+  border: 3px solid black;
   width: 100%;
-  height: 110vh;
+  height: 100%;
   margin: 1em auto;
-  width: 700px;
+  width: 900px;
   min-width: 200px;
   display: flex;
   flex-direction: column;
+  padding: 2em;
 
 }
 
@@ -39,47 +40,79 @@ h1{
   font-size: 18px;
 }
 
+/* Contenedor Principal */
 .name-form {
-  /* border: 1px solid black; */
-  display: flex;
-  flex-direction: row; 
-  gap: 2em; 
-  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Dos columnas */
+  gap: 2em; /* Espaciado entre filas y columnas */ /* Ocupa todo el ancho del contenedor */
 }
 
-.name-inputs,
-.lastname-inputs,
-.phone-inputs {
-  display: flex;
-  flex-direction: column; 
-  align-items: flex-start; 
-  width: 40%;
-  padding: 10px;
-}
-
-.form-labels {
-  font-size: 12px;
-  color: #555;
-  margin-top: 5px; 
-}
-
-.form-inputs {
-  font-size: 16px;
-  padding: 8px;
-  /* border: 1px solid #ccc; */
-  border-radius: 4px;
-  width: 100%; 
-}
-
-.data-form {
-  display: flex;
-  flex-direction: column; /* Alinea los campos verticalmente */
-  gap: 2em; /* Espaciado entre los grupos de inputs */
-}
-
+/* Grupos de Input */
 .input-group {
   display: flex;
-  flex-direction: column; /* Mantiene la etiqueta encima del input */
-  align-items: flex-start; /* Asegura la alineación a la izquierda */
+  flex-direction: column; /* Mantiene el label encima del input */
+  align-items: flex-start; /* Alinea los elementos hacia la izquierda */
 }
+
+/* Estilo de Títulos */
+.title-form {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 8px; /* Espacio entre el título y el input */
+}
+
+/* Estilo de Inputs */
+.form-inputs {
+  font-size: 14px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%; /* Asegura que el input ocupe todo el ancho disponible */
+}
+
+/* Select específico */
+.select-input {
+  background-color: #fff;
+  padding-right: 1em; /* Espacio para la flecha */
+  
+}
+
+/* Estilo de Descripciones */
+.form-labels {
+  font-size: 12px;
+  margin-top: 4px; /* Espacio entre el input y la etiqueta descriptiva */
+  color: #777; /* Color gris para descripciones */
+}
+
+.email-form,
+.address-form{
+  padding-top: 20px;
+  
+  
+}
+.address-label,
+.email-label {
+  padding-top: 20px;
+}
+
+.visted-form{
+  padding-top: 20px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  margin: 0;
+  gap: 1em;
+}
+
+.vistited-label{
+  font-size: 20px;
+}
+
+.check-input{
+  width: 25px;
+}
+
+
+
+
 
